@@ -44,6 +44,7 @@ type ButtonAsLink = CommonProps & {
   to: LinkProps['to'];
   target?: string;
   rel?: string;
+  onClick?: React.MouseEventHandler<HTMLAnchorElement>;
 };
 
 type ButtonAsAnchor = CommonProps & {
@@ -51,6 +52,7 @@ type ButtonAsAnchor = CommonProps & {
   href: string;
   target?: string;
   rel?: string;
+  onClick?: React.MouseEventHandler<HTMLAnchorElement>;
 };
 
 type Props = ButtonAsButton | ButtonAsLink | ButtonAsAnchor;
@@ -106,7 +108,7 @@ export const Button = forwardRef<HTMLButtonElement, Props>(function Button(
 
   if (props.as === 'link') {
     return (
-      <Link to={props.to} target={props.target} rel={props.rel} className={classes}>
+      <Link to={props.to} target={props.target} rel={props.rel} onClick={props.onClick} className={classes}>
         {content}
       </Link>
     );
@@ -114,7 +116,7 @@ export const Button = forwardRef<HTMLButtonElement, Props>(function Button(
 
   if (props.as === 'a') {
     return (
-      <a href={props.href} target={props.target} rel={props.rel} className={classes}>
+      <a href={props.href} target={props.target} rel={props.rel} onClick={props.onClick} className={classes}>
         {content}
       </a>
     );

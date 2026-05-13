@@ -14,6 +14,8 @@ const Press = lazy(() => import('./pages/Press'));
 const Terms = lazy(() => import('./pages/legal/Terms'));
 const Privacy = lazy(() => import('./pages/legal/Privacy'));
 const Refunds = lazy(() => import('./pages/legal/Refunds'));
+const BlogIndex = lazy(() => import('./pages/blog/BlogIndex'));
+const BlogPost = lazy(() => import('./pages/blog/BlogPost'));
 const NotFound = lazy(() => import('./pages/NotFound'));
 
 function PageFallback() {
@@ -42,6 +44,8 @@ function App() {
           <Route path="help" element={<Help />} />
           <Route path="contact" element={<Contact />} />
           <Route path="press" element={<Press />} />
+          <Route path="blog" element={<BlogIndex />} />
+          <Route path="blog/:slug" element={<BlogPost />} />
           <Route path="legal">
             <Route path="terms" element={<Terms />} />
             <Route path="privacy" element={<Privacy />} />

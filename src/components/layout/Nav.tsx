@@ -10,6 +10,7 @@ const links = [
   { to: '/vendors', label: 'Vendors' },
   { to: '/universities', label: 'Universities' },
   { to: '/about', label: 'About' },
+  { to: '/blog', label: 'Insights' },
   { to: '/pricing', label: 'Pricing' },
   { to: '/help', label: 'Help' },
 ];
