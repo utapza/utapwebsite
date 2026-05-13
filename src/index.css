@@ -1,3 +1,69 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+@layer base {
+  html {
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    scroll-behavior: smooth;
+  }
+
+  body {
+    @apply bg-white text-ink font-sans;
+  }
+
+  :focus-visible {
+    @apply outline-none ring-2 ring-brand-500 ring-offset-2 ring-offset-white rounded-md;
+  }
+
+  ::selection {
+    @apply bg-brand-200 text-brand-900;
+  }
+}
+
+@layer components {
+  .container-page {
+    @apply mx-auto w-full max-w-7xl px-5 sm:px-6 lg:px-8;
+  }
+
+  .prose-trim p {
+    @apply leading-relaxed;
+  }
+}
+
+@layer utilities {
+  .section-animate {
+    opacity: 0;
+    transform: translateY(24px);
+    transition:
+      opacity 0.7s cubic-bezier(0.2, 0.65, 0.3, 1),
+      transform 0.7s cubic-bezier(0.2, 0.65, 0.3, 1);
+    will-change: opacity, transform;
+  }
+
+  .section-animate.visible {
+    opacity: 1;
+    transform: translateY(0);
+  }
+
+  /* Respect users who prefer less motion */
+  @media (prefers-reduced-motion: reduce) {
+    html {
+      scroll-behavior: auto;
+    }
+    .section-animate {
+      opacity: 1;
+      transform: none;
+      transition: none;
+    }
+    *,
+    *::before,
+    *::after {
+      animation-duration: 0.001ms !important;
+      animation-iteration-count: 1 !important;
+      transition-duration: 0.001ms !important;
+      scroll-behavior: auto !important;
+    }
+  }
+}
