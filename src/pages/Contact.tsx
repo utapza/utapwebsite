@@ -4,10 +4,10 @@ import { Card } from '../components/ui/Card';
 import { ContactForm } from '../components/forms/ContactForm';
 
 const channels = [
-  { icon: MessageSquare, label: 'General', email: 'hello@utap.co.za' },
-  { icon: Mail, label: 'Vendors', email: 'vendors@utap.co.za' },
-  { icon: Newspaper, label: 'Press', email: 'press@utap.co.za' },
-  { icon: Handshake, label: 'Partnerships', email: 'partners@utap.co.za' },
+  { icon: MessageSquare, label: 'General', email: 'hello@utaptech.co.za' },
+  { icon: Mail, label: 'Vendors', email: 'vendors@utaptech.co.za' },
+  { icon: Newspaper, label: 'Press', email: 'press@utaptech.co.za' },
+  { icon: Handshake, label: 'Partnerships', email: 'partners@utaptech.co.za' },
 ];
 
 export default function Contact() {

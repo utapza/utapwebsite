@@ -8,8 +8,8 @@ export function FinalCTA({
 }: {
   title?: string;
   body?: string;
-  primary?: { to: string; label: string };
-  secondary?: { to: string; label: string };
+  primary?: { to?: string; href?: string; label: string };
+  secondary?: { to?: string; href?: string; label: string };
 }) {
   return (
     <section className="relative overflow-hidden py-20 md:py-28">
@@ -29,12 +29,24 @@ export function FinalCTA({
           </h2>
           <p className="mt-4 text-lg md:text-xl text-white/90">{body}</p>
           <div className="mt-8 flex flex-col sm:flex-row gap-3 justify-center">
-            <Button as="link" to={primary.to} variant="dark" size="lg">
-              {primary.label}
-            </Button>
-            <Button as="link" to={secondary.to} variant="ghost" size="lg" className="!text-white hover:!bg-white/10">
-              {secondary.label}
-            </Button>
+            {primary.href ? (
+              <Button as="a" href={primary.href} variant="dark" size="lg">
+                {primary.label}
+              </Button>
+            ) : (
+              <Button as="link" to={primary.to!} variant="dark" size="lg">
+                {primary.label}
+              </Button>
+            )}
+            {secondary.href ? (
+              <Button as="a" href={secondary.href} variant="ghost" size="lg" className="!text-white hover:!bg-white/10">
+                {secondary.label}
+              </Button>
+            ) : (
+              <Button as="link" to={secondary.to!} variant="ghost" size="lg" className="!text-white hover:!bg-white/10">
+                {secondary.label}
+              </Button>
+            )}
           </div>
         </div>
       </div>

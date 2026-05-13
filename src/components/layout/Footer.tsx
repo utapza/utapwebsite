@@ -41,7 +41,7 @@ const socials = [
   { href: 'https://www.instagram.com/utap.tech', label: 'Instagram', icon: Instagram },
   { href: 'https://x.com/utap_tech', label: 'X / Twitter', icon: Twitter },
   { href: 'https://www.linkedin.com/company/utap-tech', label: 'LinkedIn', icon: Linkedin },
-  { href: 'mailto:hello@utap.co.za', label: 'Email', icon: Mail },
+  { href: 'mailto:hello@utaptech.co.za', label: 'Email', icon: Mail },
 ];
 
 export function Footer() {

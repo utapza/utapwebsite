@@ -69,7 +69,7 @@ export function Nav() {
         </nav>
 
         <div className="hidden lg:flex items-center gap-2">
-          <Button as="link" to="/vendors" variant="ghost" size="sm">
+          <Button as="a" href="https://vendors.utaptech.co.za" variant="ghost" size="sm">
             Open a store
           </Button>
           <Button as="link" to="/students" size="sm">
@@ -118,7 +118,7 @@ export function Nav() {
             </NavLink>
           ))}
           <div className="mt-3 flex flex-col gap-2 pb-2">
-            <Button as="link" to="/vendors" variant="secondary" size="md">
+            <Button as="a" href="https://vendors.utaptech.co.za" variant="secondary" size="md">
               Open a store
             </Button>
             <Button as="link" to="/students" size="md">
