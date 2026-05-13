@@ -47,10 +47,10 @@ export default function Vendors() {
               Open your store on uTap, take orders from the campus next door, and get paid on a schedule you can count on.
             </p>
             <div className="mt-8 flex flex-col sm:flex-row gap-3">
-              <Button as="link" to="/contact" size="lg">
+              <Button as="a" href="https://vendors.utaptech.co.za" size="lg">
                 Open my store
               </Button>
-              <Button as="a" href="mailto:vendors@utap.co.za" variant="secondary" size="lg">
+              <Button as="a" href="mailto:vendors@utaptech.co.za" variant="secondary" size="lg">
                 Talk to our team
               </Button>
             </div>
@@ -149,7 +149,7 @@ export default function Vendors() {
       <FinalCTA
         title="Ready to open up?"
         body="Takes about 10 minutes. You can save your draft and come back."
-        primary={{ to: '/contact', label: 'Open my store' }}
+        primary={{ href: 'https://vendors.utaptech.co.za', label: 'Open my store' }}
         secondary={{ to: '/pricing', label: 'See pricing first' }}
       />
     </>

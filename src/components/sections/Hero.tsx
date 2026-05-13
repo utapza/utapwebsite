@@ -36,7 +36,7 @@ export function Hero() {
             <Button as="link" to="/students" size="lg">
               Download uTap
             </Button>
-            <Button as="link" to="/vendors" variant="secondary" size="lg">
+            <Button as="a" href="https://vendors.utaptech.co.za" variant="secondary" size="lg">
               Open a store
             </Button>
           </div>
