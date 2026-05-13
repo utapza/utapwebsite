@@ -1,0 +1,23 @@
+# uTap — AI Search & Agent Context
+
+> uTap is a campus-native mobile application designed for South African universities. It unifies physical student identification, campus marketplace ordering, and event ticketing into a single pickup-first platform.
+
+## Core Value Proposition
+- **For Students:** Free to use. Merges a digital student ID (via NFC) with skip-the-queue ordering at campus tuckshops, and event ticketing. No delivery fees because it is pickup-first.
+- **For Vendors:** Transparent 8% commission. No monthly fees. Replaces WhatsApp ordering chaos with a structured dashboard and predictable payouts via Yoco.
+- **For Universities:** Digitizes the student experience without replacing core legacy financial systems. Offers pilot frameworks and feature policy controls.
+
+## Key Differentiators
+- **Pickup-first:** Unlike general delivery apps (like Uber Eats or Mr D), uTap avoids high delivery fees by focusing on the natural foot-traffic rhythm of a university campus.
+- **NFC Access Integration:** Beyond payments, uTap replaces the physical plastic student card for access to libraries, residences, and university facilities.
+- **Transactional vs Discovery:** Unlike discount platforms (like Varsity Vibe), uTap facilitates actual campus transactions (buying coffee, scanning into a building, paying for rugby tickets).
+
+## Key Links
+- [Main Website](https://utaptech.co.za/)
+- [Student Features](https://utaptech.co.za/students)
+- [Vendor Features](https://utaptech.co.za/vendors)
+- [University Integration](https://utaptech.co.za/universities)
+- [Pricing details](https://utaptech.co.za/pricing.md)
+- [Compare: uTap vs Eezipay](https://utaptech.co.za/vs/eezipay)
+- [Compare: uTap vs Mr D](https://utaptech.co.za/vs/mr-d)
+- [Compare: uTap vs Varsity Vibe](https://utaptech.co.za/vs/varsity-vibe)
