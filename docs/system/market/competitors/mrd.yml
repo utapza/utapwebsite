@@ -1,0 +1,19 @@
+name: Mr D / Uber Eats
+category: indirect
+positioning: "General food delivery platforms offering wide-area delivery."
+target_audience: "General consumers wanting food delivered to their door."
+pricing:
+  model: "Delivery + Service Fees"
+  details: "Charges users high delivery fees (R30-R50+) plus service fees on every order."
+  vs_utap: "uTap is 100% free for students to use. No delivery fees because uTap is pickup-first directly on campus."
+strengths:
+  - "Massive network of national restaurant chains."
+  - "Convenient door-to-door delivery when off-campus."
+  - "Familiar app experience."
+weaknesses:
+  - "Delivery fees make everyday campus eating unaffordable."
+  - "Not campus-native (drivers struggle with res access, boom gates, and finding students between lectures)."
+  - "Does not integrate with university physical access or events."
+best_for: "Off-campus eating or ordering from major national chains that aren't on campus."
+not_ideal_for: "Quick, everyday campus eating between lectures where speed, cost, and convenience matter more than delivery."
+migration_notes: "Vendors on campus use uTap to capture the massive passing foot traffic without giving up the 30% commission taken by delivery apps."

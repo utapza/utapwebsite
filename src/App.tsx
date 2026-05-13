@@ -17,6 +17,9 @@ const Refunds = lazy(() => import('./pages/legal/Refunds'));
 const BlogIndex = lazy(() => import('./pages/blog/BlogIndex'));
 const BlogPost = lazy(() => import('./pages/blog/BlogPost'));
 const NotFound = lazy(() => import('./pages/NotFound'));
+const CompareEezipay = lazy(() => import('./pages/compare/Eezipay'));
+const CompareMrD = lazy(() => import('./pages/compare/MrD'));
+const CompareVarsityVibe = lazy(() => import('./pages/compare/VarsityVibe'));
 
 function PageFallback() {
   return (
@@ -51,6 +54,9 @@ function App() {
             <Route path="privacy" element={<Privacy />} />
             <Route path="refunds" element={<Refunds />} />
           </Route>
+          <Route path="vs/eezipay" element={<CompareEezipay />} />
+          <Route path="vs/mr-d" element={<CompareMrD />} />
+          <Route path="vs/varsity-vibe" element={<CompareVarsityVibe />} />
           <Route path="*" element={<NotFound />} />
         </Route>
       </Routes>

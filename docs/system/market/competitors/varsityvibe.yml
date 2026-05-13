@@ -1,0 +1,18 @@
+name: Varsity Vibe / UNiDAYS
+category: indirect
+positioning: "Student discount platforms focused on deal discovery."
+target_audience: "Students looking for retail and food discounts."
+pricing:
+  model: "Free for students"
+  details: "Students access deals for free. Retailers pay to be on the platform."
+  vs_utap: "Both are free for students. uTap offers utility (access, ordering, events) rather than just discount discovery."
+strengths:
+  - "Huge national network of brand discounts (Cotton On, Burger King, etc)."
+  - "Highly recognized by the student population."
+  - "Free to use for students."
+weaknesses:
+  - "Discovery only. You cannot order, pay, or access campus facilities through the app."
+  - "Not integrated into the daily rhythm of university life (res access, library, campus cafés)."
+best_for: "Finding a 20% discount code before you go shopping at the mall."
+not_ideal_for: "Actually interacting with your physical campus, paying for a coffee at the tuckshop, or scanning into the library."
+migration_notes: "We don't aim to replace Varsity Vibe. Students can use both. uTap owns the physical and transactional campus experience, while Varsity Vibe owns off-campus retail discovery."

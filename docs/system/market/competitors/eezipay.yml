@@ -1,0 +1,18 @@
+name: Eezipay (Cashless Campus)
+category: direct
+positioning: "Full-ecosystem rival focusing heavily on campus payments, wallets, and tuckshop ordering."
+target_audience: "Parents, schools, and students looking for a cashless campus environment."
+pricing:
+  model: "Fee-based"
+  details: "Often charges transaction or subscription fees for schools/parents. May include per-order costs."
+  vs_utap: "uTap is free for students (no monthly fees, no transaction fees for students). uTap relies on a transparent vendor commission instead."
+strengths:
+  - "Established player in the cashless schools/campus niche."
+  - "Deep feature set for meal-plan and fee management."
+  - "Good adoption in certain regions and specific schools."
+weaknesses:
+  - "Pricing model can shift costs to students/parents via transaction/sub fees."
+  - "Primarily a payment/ordering tool, lacks native integration with wider campus access (events, library, res) out of the box without complex bespoke integration."
+best_for: "Schools that want a pure financial and fee-management system with parent-oversight controls."
+not_ideal_for: "Universities wanting a unified, student-led 'one app' experience (access + ordering + events) without passing transaction fees to students."
+migration_notes: "uTap provides pilot frameworks for universities to test the one-app experience alongside existing systems. We offer hands-on onboarding for vendors switching from WhatsApp/Eezipay to uTap."

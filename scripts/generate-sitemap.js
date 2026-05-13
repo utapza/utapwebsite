@@ -29,6 +29,9 @@ const routes = [
   '/refunds',
   '/terms',
   '/privacy',
+  '/vs/eezipay',
+  '/vs/mr-d',
+  '/vs/varsity-vibe',
 ];
 
 // Let's try to dynamically read from the blog if the folder exists
