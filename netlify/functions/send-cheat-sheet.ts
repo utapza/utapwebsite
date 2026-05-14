@@ -27,7 +27,7 @@ export const handler: Handler = async (event) => {
 
   try {
     console.log("Sending cheat sheet to ", email, "from ", FROM_EMAIL, "pdf url: ", PDF_DOWNLOAD_URL, "RESEND API KEY: ", process.env.RESEND_API_KEY);
-    await resend.emails.send({
+    const response = await resend.emails.send({
       from: FROM_EMAIL,
       to: email,
       subject: '📋 Your Campus Ordering Cheat Sheet',
@@ -59,6 +59,8 @@ export const handler: Handler = async (event) => {
         </div>
       `,
     });
+
+    console.log("Response: ", response);
 
     console.log("email sent successfully")
 
