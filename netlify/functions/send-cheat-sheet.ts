@@ -16,14 +16,17 @@ export const handler: Handler = async (event) => {
     const body = JSON.parse(event.body ?? '{}');
     email = (body.email ?? '').trim().toLowerCase();
   } catch {
+    console.log("Invalid JSON");
     return { statusCode: 400, body: JSON.stringify({ error: 'Invalid JSON' }) };
   }
 
   if (!email || !/^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(email)) {
+    console.log("Invalid email address: ", email);
     return { statusCode: 400, body: JSON.stringify({ error: 'Invalid email address' }) };
   }
 
   try {
+    console.log("Sending cheat sheet to ", email, "from ", FROM_EMAIL, "pdf url: ", PDF_DOWNLOAD_URL, "RESEND API KEY: ", process.env.RESEND_API_KEY);
     await resend.emails.send({
       from: FROM_EMAIL,
       to: email,
@@ -56,6 +59,8 @@ export const handler: Handler = async (event) => {
         </div>
       `,
     });
+
+    console.log("email sent successfully")
 
     return {
       statusCode: 200,
