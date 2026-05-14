@@ -10,8 +10,9 @@
 
 ## Executive summary
 
-- **Email today:** Order payment success uses **Resend** from `utap-vendors/netlify/functions/lib/resolveCustomerEmail.ts` (`maybeSendOrderPaidEmail` → `sendResendEmail`), **not** the HTTP `send-transactional-email` function. Scheduled payout **creation** emails vendors from `create-monthly-payouts.ts` via **`sendResendEmail`**. Vendor marketing **contact** uses **`send-transactional-email`** with template `contact_form`.
-- **`send-transactional-email` Netlify function:** Only **`contact_form`** ingress (plus CORS / bearer). **`utap-apps`** `transactionalEmailService.js` and **`utap-admin`** `emailApi.ts` exist but have **no in-repo callers** yet — safe to wire without duplicating payment mail (which already bypasses that HTTP endpoint).
+- **Email today:** Order payment success uses **Resend** from `utap-vendors/netlify/functions/lib/resolveCustomerEmail.ts`. Scheduled payout **creation** emails vendors from `create-monthly-payouts.ts`. Vendor marketing **contact** uses **`send-transactional-email`**. **NEW:** Lead magnet delivery uses **`send-cheat-sheet`** function in `utapwebsiite` to trigger an automated **5-email nurture sequence**.
+- **`send-transactional-email` Netlify function:** Only **`contact_form`** ingress (plus CORS / bearer). **`utap-apps`** `transactionalEmailService.js` and **`utap-admin`** `emailApi.ts` exist but have **no in-repo callers** yet.
+- **`send-cheat-sheet` Netlify function:** New marketing ingress in **`utapwebsiite`**. Delivers PDF immediately and starts the drip sequence in Resend.
 - **In-app live:** Vendor orders list uses **Supabase Realtime** (`postgres_changes` on `orders`). Mobile uses Realtime on **`profiles`** for **feature policy** refresh only. Student **orders** screen is **poll-on-focus**, not realtime.
 - **Push:** No **Expo Push Notifications** integration found in **`utap-apps`** (settings may mention it; no implementation audit hit).
 
@@ -54,6 +55,7 @@
 | “Flagged activity” / fraud | Admin | *Not implemented as a dedicated flow in audited repos* | — | Define product scope first | Low |
 | Order item issue / substitution | Student / vendor | *No dedicated “item issue” workflow found* | — | Future feature | Low |
 | `transactionalEmailService` (mobile) | — | `utap-apps` `src/services/transactionalEmailService.js` | **Unused** (no imports) | Wire to `send-transactional-email` only for **new** templates; do not duplicate Resend paths used in webhook/payouts | — |
+| Lead magnet request | Student | `utapwebsiite` `send-cheat-sheet.ts` | **Email** via **Resend**; delivers PDF immediately | **Email sequence (5-part)**: Day 0 (Immediate), 3, 7, 14, 21. | High |
 
 ---
 
@@ -62,6 +64,7 @@
 | Mechanism | Used for |
 | --- | --- |
 | **`/.netlify/functions/send-transactional-email`** | Vendor site **contact form** only (`template: 'contact_form'`). Bearer + CORS. |
+| **`/.netlify/functions/send-cheat-sheet`** | Marketing site **lead magnet** delivery + drip sequence start. |
 | **`lib/resendSend.ts` → `sendResendEmail`** | **Order paid** customer receipt (`resolveCustomerEmail.ts`), **scheduled payout** vendor email (`create-monthly-payouts.ts`). |
 | **Supabase Auth** | Password reset / confirm for mobile and admin (SMTP / Resend on Supabase side per ops docs). |
 

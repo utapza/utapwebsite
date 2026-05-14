@@ -1,25 +1,44 @@
 # Pricing — uTap
 
-uTap's pricing is designed to be completely free for students, while offering transparent, predictable economics for campus vendors and universities.
+Our pricing is built to prioritize **rapid campus adoption and network effects**. We win by keeping marketplace friction low, avoiding the punishing 25-35% commissions charged by delivery apps like Mr D and Uber Eats, and monetizing through predictable subscriptions and high-value B2B partnerships.
 
-## Student Pricing
-- **Price:** R0 (Free)
-- **Included:** Digital student ID, NFC campus access, marketplace ordering, event ticketing.
-- **Note:** uTap never charges students subscription fees, transaction markups, or delivery fees. Students pay exactly the menu price.
+## For Students (Freemium)
+**Value Metric:** Convenience & Flexibility
+Get exactly what you need to navigate campus for free, with powerful upgrades for power users.
 
-## Vendor Pricing
-- **Store Listing:** Free
-- **Platform Commission:** 8% per paid order (charged to the vendor)
-- **Payment Processing (Yoco):** 2.95% + VAT per transaction
-- **Payouts:** Auto-payouts to Yoco bank accounts on the 28th of every month, or on-demand (R50 minimum).
+- **uTap Basic (Free)**
+  - 1 Active NFC Card Slot
+  - Single device login
+  - Zero markup or hidden fees on uShop orders
+  - Standard campus event discovery
 
-## University / Enterprise Pricing
-- **Change Fee:** R100 (one-time fee for physical card replacement/abuse control).
-- **Integration & Pilots:** Custom scoping. Contact sales for university-wide rollout and pilot frameworks.
+- **uTap Premium (Subscription)**
+  - Extra NFC Card Slots
+  - Multi-device login
+  - Access to uGig (exclusive student events)
+  - Apple Device perks & Verified badge
+  - University/faculty change capabilities
 
-### Example Order Calculation (Vendor)
-For a R100 order:
-- Student pays: R100
-- Yoco fee (2.95% + VAT): ~R2.95
-- uTap commission (8%): R8.00
-- Vendor receives: ~R89.05
+## For Campus Vendors (Tiered Subscription)
+**Value Metric:** Growth, Reach & Predictability
+Keep your margins. We replace punishing per-order commissions with predictable monthly growth tools.
+
+- **Starter (Free)**
+  - 1 Store Listing
+  - Zero uTap transaction commissions (standard payment gateway fees apply)
+  - Basic order management
+
+- **Growth (Monthly Subscription)**
+  - Multiple store listings
+  - Advanced analytics & insights
+  - Vendor mobile app with push notifications
+  - Promoted placements & targeted marketing to students
+
+## For External Businesses (B2B)
+**Value Metric:** Verified Access & Precision Targeting
+Our primary long-term revenue engine.
+
+- **Verified Student Access:** API verification services.
+- **Precision Advertising:** Target by University, Faculty, and Year level.
+- **Aggregated Insights:** Campus trend data and intelligence packages.
+- *Contact our sales team for custom B2B partnerships.*

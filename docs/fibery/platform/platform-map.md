@@ -13,7 +13,7 @@
 | **utap-apps** | React Native / Expo student app: NFC, Ushop, uGig, **Yoco** checkout (**WebView**), profile-university scope, **feature policy** | Students; most engineering time |
 | **utap-admin** | Vite + React **SPA (Single Page Application)** on **Netlify**; Supabase; analytics; **feature policy** UI | Internal ops |
 | **utap-vendors** | Vite + React vendor portal on **Netlify**; **`netlify/functions`** (**Yoco**, webhooks, payouts, email, tickets); Supabase | Vendors; **platform serverless** owner |
-| **utapwebsiite** | Vite + React marketing site (folder name keeps historical spelling) | Public visitors |
+| **utapwebsiite** | Vite + React marketing & content engine: blog, SEO comparison pages, lead magnets, internal launch hub | Public visitors; growth engine |
 | **expo-mifare-scanner** | **`@utapza/expo-mifare-scanner`** native module | Consumed by **utap-apps** |
 | **utap-docs** | Handbook (`docs/fibery/`), **SSOT (single source of truth)** copy (`docs/system/market/`), topic guides, **`adr/`** | Everyone (may be **non-git** in some clones) |
 | **utapchats-export** (optional) | Research / exports | Internal |
@@ -31,7 +31,7 @@ One **Supabase** project: **Postgres**, **Auth**, **RLS (Row Level Security)**. 
 
 - **Student checkout:** **`utap-apps`** → **`POST .../create-yoco-checkout`** → **Yoco** hosted URL → in-app **`YocoCheckoutWebView`** → **`yoco-webhook`** confirms → Supabase order / payment fields update.
 - **Paid university change:** RPC in Supabase → **`create-university-change-checkout`** (Bearer session) → same **Yoco** + **webhook** pattern for the change-request row.
-- **Legacy Stripe:** **`stripePaymentService.js`** exists in **`utap-apps`** but **order UI uses Yoco**; do not describe the platform as Stripe-first.
+- **Legacy Stripe:** Fully removed. Do not describe the platform as Stripe-capable. All payments flow through **Yoco**.
 
 Secrets (**Yoco** secret, **Supabase** service role, **Resend**) live in **Netlify** environment config for **`utap-vendors`** (and any site that invokes the email function).
 
@@ -74,8 +74,8 @@ Snapshot from `git log --oneline` (newest first, abbreviated):
 | **utap-vendors** | **University change** **Yoco** checkout + webhook; **Resend** email function + landing contact; **payouts** + webhook behaviour; store **hours** / **cutoff**; **Netlify** **CI** docs; vendor auth/store/customers. |
 | **utap-admin** | **Feature policy** UI; forgot/reset password; **Netlify** deploy; analytics dashboard; **orders** **RLS** + RPC alignment. |
 | **expo-mifare-scanner** | **2.0.11** release line; iOS emulation / availability messaging; native Sentry removed from module. |
-| **utapwebsiite** | Minimal history in sample workspace (`first commit` only—re-run `git log` if this repo grows). |
-| **utap-docs** / **utap-shared** | No `.git` in this workspace path—omit from `git log` or initialise **VCS (Version Control System)** if you want the same workflow. |
+| **utapwebsiite** | **Full blog engine** (11+ posts); **SEO comparison pages** (Mr D, Varsity Vibe, Eezipay); **Lead magnet** + `send-cheat-sheet` Netlify function; **Internal Launch Hub** (NMU strategy). |
+| **utap-docs** / **utap-shared** | Contains **NMU Launch Strategy** and **30-day Social Bank**. |
 
 ---
 

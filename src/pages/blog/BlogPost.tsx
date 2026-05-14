@@ -32,7 +32,7 @@ export default function BlogPost() {
     };
   }, [slug]);
 
-  if (!postMatch) {
+  if (!postMatch || postMatch.frontmatter?.draft) {
     return <Navigate to="/404" replace />;
   }
 

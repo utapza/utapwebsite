@@ -2,10 +2,12 @@ import { Helmet } from 'react-helmet-async';
 import { Section, SectionHeading } from '../../components/ui/Section';
 import { Card } from '../../components/ui/Card';
 import { Button } from '../../components/ui/Button';
+import { CheatSheetPopup } from '../../components/marketing/CheatSheetPopup';
 
 export default function CompareMrD() {
   return (
     <>
+      <CheatSheetPopup />
       <Helmet>
         <title>uTap vs Mr D & Uber Eats — The Campus Ordering Comparison</title>
         <meta 
@@ -71,7 +73,7 @@ export default function CompareMrD() {
               </tr>
               <tr>
                 <td className="py-4 px-6 text-sm font-medium text-ink">Student Fees</td>
-                <td className="py-4 px-6 text-sm text-ink-muted"><strong>Zero.</strong> You pay the menu price.</td>
+                <td className="py-4 px-6 text-sm text-ink-muted"><strong>Freemium.</strong> Zero markup on orders. Premium perks available.</td>
                 <td className="py-4 px-6 text-sm text-ink-muted">High. Delivery fees (R30-R50+) + service fees.</td>
               </tr>
               <tr>
@@ -86,7 +88,7 @@ export default function CompareMrD() {
               </tr>
               <tr>
                 <td className="py-4 px-6 text-sm font-medium text-ink">Vendor Commission</td>
-                <td className="py-4 px-6 text-sm text-ink-muted">Transparent 8% — keeps local campus shops alive.</td>
+                <td className="py-4 px-6 text-sm text-ink-muted"><strong>0% commission.</strong> Predictable monthly subscriptions for growth.</td>
                 <td className="py-4 px-6 text-sm text-ink-muted">Often up to 30%, eating away small business margins.</td>
               </tr>
             </tbody>
@@ -112,7 +114,7 @@ export default function CompareMrD() {
           <div>
             <h3 className="text-2xl font-bold text-ink">Why Campus Vendors Choose uTap</h3>
             <p className="mt-4 text-ink-muted leading-relaxed">
-              For small campus tuckshops and cafés, giving up 30% of their revenue to a delivery app is unsustainable. uTap only charges an 8% platform fee. By pushing a pickup-first model, we help campus vendors handle the massive rush of passing foot traffic efficiently, without destroying their margins. 
+              For small campus tuckshops and cafés, giving up 30% of their revenue to a delivery app is unsustainable. We completely eliminate per-transaction commissions. Instead, vendors start for free and upgrade to predictable monthly subscriptions for advanced growth tools. By pushing a pickup-first, zero-commission model, we help vendors handle the massive rush of passing foot traffic without destroying their margins.
             </p>
           </div>
         </div>

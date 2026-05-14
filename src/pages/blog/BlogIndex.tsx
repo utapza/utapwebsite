@@ -17,7 +17,7 @@ export default function BlogIndex() {
           ...module.frontmatter,
         };
       })
-      .filter((post) => post.title) // filter out invalid posts
+      .filter((post) => post.title && !post.draft) // filter out invalid and draft posts
       .sort((a, b) => new Date(b.date).getTime() - new Date(a.date).getTime());
   }, []);
 

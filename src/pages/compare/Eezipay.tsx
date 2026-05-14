@@ -2,10 +2,12 @@ import { Helmet } from 'react-helmet-async';
 import { Section, SectionHeading } from '../../components/ui/Section';
 import { Card } from '../../components/ui/Card';
 import { Button } from '../../components/ui/Button';
+import { CheatSheetPopup } from '../../components/marketing/CheatSheetPopup';
 
 export default function CompareEezipay() {
   return (
     <>
+      <CheatSheetPopup />
       <Helmet>
         <title>uTap vs Eezipay (Cashless Campus) — Which is better for your campus?</title>
         <meta 
@@ -71,12 +73,12 @@ export default function CompareEezipay() {
               </tr>
               <tr>
                 <td className="py-4 px-6 text-sm font-medium text-ink">Student Pricing</td>
-                <td className="py-4 px-6 text-sm text-ink-muted"><strong>Free.</strong> No transaction fees or monthly subs.</td>
+                <td className="py-4 px-6 text-sm text-ink-muted"><strong>Freemium.</strong> Free core ordering/access. Premium power-user upgrades.</td>
                 <td className="py-4 px-6 text-sm text-ink-muted">Often includes transaction/subscription fees for schools/parents.</td>
               </tr>
               <tr>
                 <td className="py-4 px-6 text-sm font-medium text-ink">Vendor Experience</td>
-                <td className="py-4 px-6 text-sm text-ink-muted">Transparent 8% commission. Predictable Yoco payouts.</td>
+                <td className="py-4 px-6 text-sm text-ink-muted"><strong>0% commission.</strong> Predictable monthly subscriptions.</td>
                 <td className="py-4 px-6 text-sm text-ink-muted">Variable payment models depending on the institution.</td>
               </tr>
               <tr>
@@ -100,7 +102,7 @@ export default function CompareEezipay() {
           <div>
             <h3 className="text-2xl font-bold text-ink">Pricing: Who actually pays?</h3>
             <p className="mt-4 text-ink-muted leading-relaxed">
-              With many cashless systems, the cost is passed down to students or parents through transaction fees or subscriptions. We built uTap with a different philosophy: it should be completely free for students to use. Our revenue comes from a transparent commission charged to vendors on successful marketplace orders. This means students win on total cost, and vendors get predictable, clear payouts via Yoco without hidden monthly fees.
+              With many cashless systems, the cost is passed down to students or parents through transaction fees. We built uTap with a different philosophy. Our core ordering and access features are completely free for students. For vendors, we eliminated transaction commissions entirely, replacing them with predictable monthly subscriptions. We keep marketplace friction low by generating our primary revenue from high-value B2B partnerships and student power-user upgrades.
             </p>
           </div>
           <div>
