@@ -1,0 +1,92 @@
+competitors:
+  - id: cartza
+    name: CartZA
+    url: https://cartza.co.za/
+    tagline: "Skip the queue."
+    target_audience: "University students focused on food ordering."
+    positioning: "A student-built food ordering app focused on convenience and queue skipping."
+    pricing: "Free for students; transaction fees for vendors."
+    strengths:
+      - Student-built / relatable brand
+      - Focused exclusively on campus food
+      - Active at UFS and expanding
+    weaknesses:
+      - Narrow focus (food only)
+      - No digital student ID (NFC) integration
+      - No vendor portal or analytics
+      - Geographic lock (primarily Bloemfontein/UFS)
+      - Inconsistent student verification (Policy vs Reality)
+      - Unreliable onboarding UX
+    best_for: "Students at UFS looking for food delivery."
+    utap_differentiation: "Verified Campus Infrastructure: uTap provides actual NFC student verification, a multi-category marketplace (Electronics/Books), and professional vendor dashboards with automated payouts. We are a scalable platform, not just a delivery intermediary."
+
+  - id: varsity-vibe
+    name: Varsity Vibe
+    url: https://varsityvibe.co.za
+    tagline: "SA's first student-only discount app."
+    target_audience: "Budget-conscious students looking for brand deals."
+    positioning: "A membership-based platform offering discounts at major retailers and local spots."
+    pricing: "R200/year membership fee."
+    strengths:
+      - Long-running, established brand
+      - Large network of national brand partners (e.g., Dis-Chem, Nando's)
+      - Proven monetization model
+    weaknesses:
+      - Passive savings, not transactional commerce
+      - No in-app ordering or payments for campus vendors
+      - No digital ID utility
+      - Membership fee can be a barrier
+    best_for: "Students who want discounts at national retailers."
+    utap_differentiation: "Transactional commerce vs passive discounts. uTap drives direct campus orders and payments, plus provides essential utility (NFC ID), which Varsity Vibe lacks."
+
+  - id: snapscan
+    name: SnapScan
+    url: https://snapscan.co.za
+    tagline: "Pay with your phone."
+    target_audience: "General consumers and university students at integrated campuses."
+    positioning: "A mobile payment app that uses QR codes and NFC for cashless transactions."
+    pricing: "Free for users; standard merchant fees."
+    strengths:
+      - Massive trust and adoption in South Africa
+      - Existing integration with some university systems (e.g., Stellenbosch)
+      - Reliable payment rail
+    weaknesses:
+      - Just a payment rail, not a marketplace
+      - No discovery or ordering layer for campus stores
+      - No event ticketing (uGig)
+    best_for: "Users who just want a fast way to pay at a till."
+    utap_differentiation: "Marketplace + Wallet context. uTap owns the discovery and ordering loop, not just the payment. We provide the storefront for the vendor, which SnapScan doesn't do."
+
+  - id: eezipay
+    name: Eezipay
+    url: https://eezipay.com
+    tagline: "Campus payments made easy."
+    target_audience: "Schools and universities looking for cashless systems."
+    positioning: "A closed-loop payment system for educational institutions."
+    pricing: "Institutional licensing + transaction fees."
+    strengths:
+      - Strong in school tuckshops (K-12)
+      - Handles meal plans and printing credits
+    weaknesses:
+      - Clunky, institutional UX
+      - Closed ecosystem (hard for independent vendors to join)
+      - Limited mobile app engagement
+    best_for: "Schools wanting a strictly controlled, parent-funded payment system."
+    utap_differentiation: "Open marketplace + Modern UX. uTap is a 'super-app' students actually want to use, with a sleek consumer-grade experience and an open marketplace for all campus vendors."
+
+  - id: mrd-ubereats
+    name: Mr D / Uber Eats
+    url: https://mrdelivery.com
+    tagline: "Your favorite restaurants, delivered."
+    target_audience: "General population; students at home."
+    positioning: "High-volume delivery platforms with massive restaurant variety."
+    pricing: "High delivery fees (R30-R50) + service fees."
+    strengths:
+      - Unmatched restaurant variety
+      - Excellent logistics and delivery tracking
+    weaknesses:
+      - Expensive for students (fees often 50%+ of order value)
+      - Not campus-native (drivers struggle with security gates/res names)
+      - High commission (25-35%) hurts campus vendors
+    best_for: "Large orders or treating yourself when off-campus."
+    utap_differentiation: "Pickup-first + Zero delivery fees. uTap is built for the 15-minute gap between lectures. We partner with stores *on* campus, eliminating delivery friction and costs."
