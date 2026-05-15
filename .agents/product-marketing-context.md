@@ -1,24 +1,35 @@
 # Product Marketing Context
 
-*Last updated: 2026-05-14*
+*Last updated: 2026-05-14 (Admin & URLs sync)*
 
 ---
 
 ## Product Overview
 
-**One-liner:** uTap is the campus digital wallet that puts your student card, campus orders, and event tickets on your phone — one tap away.
+**One-liner:** uTap is the campus digital wallet that puts your campus orders and event tickets on your phone — one tap away.
 
-**What it does:** uTap lets South African university students scan their physical student card once, then carry it digitally. From the same app they browse and order from real campus vendors (uShop), discover sports and campus events (uGig — paid feature), manage tickets, and track orders with pickup codes — all backed by Yoco-powered checkout and Supabase-synced cloud backup.
+**What it does:** uTap lets South African university students browse and order from real campus vendors (uShop) and discover campus events (uGig). Students can track orders with pickup codes and manage event tickets in one place — all backed by Yoco-powered checkout and Supabase-synced cloud backup.
 
 **Product category:** Campus super-app / student digital wallet / campus commerce platform
 
 **Product type:** Mobile app (React Native / Expo) for students + web dashboard (React / Vite) for vendors + admin console for operators
 
 **Business model:**
-- **Students:** Free core app (wallet + uShop); freemium upsells (uGig access, extra NFC card slots, multi-device, university change, Apple perks, verified badge)
-- **Vendors:** Free to list (1 store); 8% commission per paid order + Yoco fee (2.95% + VAT); paid subscription tiers unlock growth tools (extra stores, analytics, promoted placements)
-- **B2B (long-term engine):** Businesses (banks, retailers, gyms, transport, event organisers, brands) pay for verified student access, precision-targeted advertising (by faculty + year level + university), and aggregated student insights packages
-- **Payouts:** Auto on the 28th of each month; vendors can request anytime (R 50 minimum)
+- **Students:** Free core app (uShop discovery + uGig browsing); paid tickets for events; premium upsells (verified badge, early access to tickets).
+- **Vendors:** Free to list (1 store); 8% commission per paid order + Yoco fee (2.95% + VAT); paid subscription tiers unlock growth tools (extra stores, analytics, promoted placements).
+- **Event Organisers:** Paid event listings or commission on ticket sales.
+- **B2B (long-term engine):** Businesses (banks, retailers, gyms, brands) pay for verified student access and precision-targeted advertising (by faculty + year level + university).
+- **Payouts:** Auto on the 28th of each month; vendors can request anytime (R 50 minimum).
+
+---
+
+## Production Environments
+
+- **Main Marketing / Student Portal:** [https://utaptech.co.za](https://utaptech.co.za)
+- **Vendor Portal:** [https://vendors.utaptech.co.za](https://vendors.utaptech.co.za)
+- **Admin Console:** [https://admin.utaptech.co.za](https://admin.utaptech.co.za)
+
+*Note: Older references may use `utap.co.za`. New technical properties are consolidated on `utaptech.co.za`.*
 
 ---
 
@@ -36,8 +47,7 @@
 - Currently paying 25–35% commission to Mr D / Uber Eats, or managing orders manually via WhatsApp
 
 **Universities (partnership / distribution channel):**
-- Institutional partners who benefit from reduced plastic card loss, faster access control, and verified campus commerce
-- Contact: partners@utap.co.za
+- Institutional partners who benefit from reduced queues, verified campus commerce, and unified event ticketing.
 
 **B2B / Advertisers (long-term revenue engine):**
 - Banks, retailers, gyms, transport companies, event organisers, brands
@@ -49,10 +59,9 @@
 
 | Persona | Cares about | Challenge | Value we promise |
 |---------|-------------|-----------|------------------|
-| Student | Convenience, not losing their card, not being overcharged | Card is back at res; food queue is long; tickets get lost | "Your student card lives on your phone now. Tap in, order up, show up." |
-| Campus vendor | Margins, predictable cash flow, less queue management | Paying 25–35% commission to delivery apps; orders are messy | Free to list. Small commission. Predictable payouts. One inbox. |
-| University partnerships lead | Student experience, data privacy, operational efficiency | Plastic card loss, replacement costs, long queues at readers | Less plastic. Faster turnstiles. Verified campus-only vendors. |
-| B2B / Brand | Reaching students with precision, ROI on campus marketing | Generic ads don't convert; no verified student segments available | Verified student access by faculty, year, and university |
+| Student | Convenience, not being overcharged, finding things to do | Food queue is long; tickets get lost; missing out on events | "Skip the queue. Never miss a gig." |
+| Campus vendor | Margins, predictable cash flow, less queue management | Paying 25–35% commission to delivery apps; orders are messy | Free to list. Small commission. One inbox. |
+| Event Organiser | Ticket sales, verified student attendance, easy access | Physical ticket loss; reach is limited to WhatsApp groups | Sell to verified students. Digital tickets. Real-time sales data. |
 
 ---
 
@@ -191,10 +200,8 @@
 **Glossary:**
 | Term | Meaning |
 |------|---------|
-| uShop | The campus marketplace tab inside the student app (free) |
-| uGig | The sports and campus events discovery tab (paid student feature) |
-| NFC | Near Field Communication — how the phone reads the physical student card |
-| MIFARE | The card standard used by most SA university cards |
+| uShop | The campus marketplace tab inside the student app |
+| uGig | The campus events discovery and ticketing tab |
 | Yoco | South African payment provider used for vendor checkout and payouts |
 | Feature policy | Operator-controlled flags that enable/disable features per campus or user profile |
 | EAS | Expo Application Services — build and deployment tooling for the mobile app |
