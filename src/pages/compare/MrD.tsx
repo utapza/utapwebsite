@@ -120,6 +120,42 @@ export default function CompareMrD() {
         </div>
       </Section>
 
+      {/* Related Reading & Resources */}
+      <Section className="bg-emerald-soft">
+        <div className="max-w-4xl mx-auto">
+          <div className="grid md:grid-cols-2 gap-8 items-center">
+            <div>
+              <h3 className="text-2xl font-bold text-ink">Want the full data on campus food costs?</h3>
+              <p className="mt-4 text-ink-muted leading-relaxed">
+                We analyzed thousands of campus orders to find out exactly what students pay. Download our free guide on campus ordering economics.
+              </p>
+              <div className="mt-6">
+                <Button as="link" to="/downloads/campus-ordering" variant="dark">
+                  Download the Guide
+                </Button>
+              </div>
+            </div>
+            <div className="bg-white p-6 rounded-2xl shadow-sm ring-1 ring-slate-200">
+              <h4 className="font-bold text-ink">Related Reading</h4>
+              <ul className="mt-4 space-y-4">
+                <li>
+                  <a href="/blog/campus-food-delivery-fees-south-africa" className="text-brand-700 hover:underline font-medium block">
+                    The Real Cost of Ordering Food on Campus (2026) →
+                  </a>
+                  <p className="text-xs text-ink-muted mt-1">A deep dive into delivery vs pickup economics.</p>
+                </li>
+                <li>
+                  <a href="/blog/best-student-apps-south-africa" className="text-brand-700 hover:underline font-medium block">
+                    Best Student Apps for South African Universities →
+                  </a>
+                  <p className="text-xs text-ink-muted mt-1">Apps that actually save you time and money.</p>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </Section>
+
       {/* Final CTA */}
       <Section className="bg-white" variant="tight">
         <div className="rounded-3xl bg-emerald-gradient p-8 md:p-12 text-white text-center max-w-4xl mx-auto">

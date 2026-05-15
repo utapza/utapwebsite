@@ -107,6 +107,61 @@ export default function CompareVarsityVibe() {
         </div>
       </Section>
 
+      {/* FAQ Section */}
+      <Section className="bg-emerald-soft">
+        <SectionHeading
+          align="center"
+          title="Frequently Asked Questions"
+          subtitle="How uTap fits into your digital life."
+        />
+        <div className="mt-12 max-w-3xl mx-auto divide-y divide-slate-100">
+          <div className="py-6">
+            <h4 className="text-lg font-bold text-ink">Do I have to choose between uTap and Varsity Vibe?</h4>
+            <p className="mt-2 text-ink-muted leading-relaxed">
+              Not at all. Most students use both. Use Varsity Vibe to save money when you're shopping off-campus at big retailers. Use uTap to physically navigate your campus—accessing buildings, ordering lunch for pickup, and finding campus-specific events.
+            </p>
+          </div>
+          <div className="py-6">
+            <h4 className="text-lg font-bold text-ink">Does uTap offer discounts like Varsity Vibe?</h4>
+            <p className="mt-2 text-ink-muted leading-relaxed">
+              uTap's focus is on zero-markup ordering rather than broad discount codes. Instead of 10% off a R150 meal plus a R50 delivery fee, uTap lets you pay the exact menu price with no fees. For campus commerce, we find zero-fee pickup is usually the better financial move for students.
+            </p>
+          </div>
+          <div className="py-6">
+            <h4 className="text-lg font-bold text-ink">How do I get my student card onto uTap?</h4>
+            <p className="mt-2 text-ink-muted leading-relaxed">
+              Just download the app and use the "Scan Card" feature. If your university card is MIFARE-compatible (most are), the credentials will be stored securely in your phone's NFC wallet. You can then tap in at campus gates using just your phone.
+            </p>
+          </div>
+        </div>
+      </Section>
+
+      {/* FAQ Schema Markup */}
+      <script type="application/ld+json">
+        {JSON.stringify({
+          "@context": "https://schema.org",
+          "@type": "FAQPage",
+          "mainEntity": [
+            {
+              "@type": "Question",
+              "name": "Do I have to choose between uTap and Varsity Vibe?",
+              "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "No. Students typically use both—Varsity Vibe for off-campus retailer discounts and uTap for on-campus access, ordering, and events."
+              }
+            },
+            {
+              "@type": "Question",
+              "name": "Does uTap offer discounts like Varsity Vibe?",
+              "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "uTap focuses on zero-markup, zero-fee campus ordering for pickup. While we don't focus on broad discount codes, we ensure students pay the lowest possible price by eliminating delivery and service fees."
+              }
+            }
+          ]
+        })}
+      </script>
+
       {/* Final CTA */}
       <Section className="bg-white" variant="tight">
         <div className="rounded-3xl bg-emerald-gradient p-8 md:p-12 text-white text-center max-w-4xl mx-auto">

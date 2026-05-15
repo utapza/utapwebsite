@@ -137,6 +137,75 @@ export default function CompareEezipay() {
         </div>
       </Section>
 
+      {/* FAQ Section */}
+      <Section className="bg-white">
+        <SectionHeading
+          align="center"
+          title="Frequently Asked Questions"
+          subtitle="Everything you need to know about switching to uTap."
+        />
+        <div className="mt-12 max-w-3xl mx-auto divide-y divide-slate-100">
+          <div className="py-6">
+            <h4 className="text-lg font-bold text-ink">Is uTap really free for students?</h4>
+            <p className="mt-2 text-ink-muted leading-relaxed">
+              Yes. Unlike some cashless campus systems that charge students transaction fees or monthly subscriptions, uTap is completely free to use for core ordering and access features. We generate revenue through vendor subscriptions and student power-user upgrades.
+            </p>
+          </div>
+          <div className="py-6">
+            <h4 className="text-lg font-bold text-ink">Does uTap work with existing student IDs?</h4>
+            <p className="mt-2 text-ink-muted leading-relaxed">
+              uTap replaces the physical student ID by turning your phone into an NFC-enabled access and payment tool. For universities, we offer a parallel pilot framework where uTap can coexist with your current physical card system while you transition to mobile-first access.
+            </p>
+          </div>
+          <div className="py-6">
+            <h4 className="text-lg font-bold text-ink">How does uTap compare to Eezipay for tuckshop owners?</h4>
+            <p className="mt-2 text-ink-muted leading-relaxed">
+              While Eezipay focuses on cashless wallet management, uTap provides a full pickup-first marketplace. Our 0% commission model for vendors ensures you keep more of your revenue compared to traditional delivery apps or high-fee cashless systems.
+            </p>
+          </div>
+          <div className="py-6">
+            <h4 className="text-lg font-bold text-ink">What happens if a student loses their phone?</h4>
+            <p className="mt-2 text-ink-muted leading-relaxed">
+              Security is our priority. Since your student ID is tied to your biometric-secured device (FaceID/TouchID), it's actually safer than a physical card. If you lose your phone, you can instantly deactivate your uTap wallet from any web browser.
+            </p>
+          </div>
+        </div>
+      </Section>
+
+      {/* FAQ Schema Markup */}
+      <script type="application/ld+json">
+        {JSON.stringify({
+          "@context": "https://schema.org",
+          "@type": "FAQPage",
+          "mainEntity": [
+            {
+              "@type": "Question",
+              "name": "Is uTap really free for students?",
+              "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "Yes. Unlike some cashless campus systems that charge students transaction fees or monthly subscriptions, uTap is completely free to use for core ordering and access features."
+              }
+            },
+            {
+              "@type": "Question",
+              "name": "Does uTap work with existing student IDs?",
+              "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "uTap replaces the physical student ID by turning your phone into an NFC-enabled access and payment tool. For universities, we offer a parallel pilot framework."
+              }
+            },
+            {
+              "@type": "Question",
+              "name": "How does uTap compare to Eezipay for tuckshop owners?",
+              "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "While Eezipay focuses on cashless wallet management, uTap provides a full pickup-first marketplace with a 0% commission model for vendors."
+              }
+            }
+          ]
+        })}
+      </script>
+
       {/* Final CTA */}
       <Section className="bg-white" variant="tight">
         <div className="rounded-3xl bg-emerald-gradient p-8 md:p-12 text-white text-center max-w-4xl mx-auto">
