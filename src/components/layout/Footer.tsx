@@ -13,6 +13,15 @@ const columns = [
     ],
   },
   {
+    title: 'Compare',
+    links: [
+      { to: '/vs/cartza', label: 'uTap vs CartZA' },
+      { to: '/vs/varsity-vibe', label: 'uTap vs Varsity Vibe' },
+      { to: '/vs/mr-d', label: 'uTap vs Mr D' },
+      { to: '/best-campus-apps', label: 'Best campus apps' },
+    ],
+  },
+  {
     title: 'Company',
     links: [
       { to: '/about', label: 'About' },
@@ -22,18 +31,12 @@ const columns = [
     ],
   },
   {
-    title: 'Legal',
+    title: 'Support',
     links: [
+      { to: '/help', label: 'Help centre' },
       { to: '/legal/terms', label: 'Terms' },
       { to: '/legal/privacy', label: 'Privacy' },
       { to: '/legal/refunds', label: 'Refunds' },
-    ],
-  },
-  {
-    title: 'Get in touch',
-    links: [
-      { to: '/help', label: 'Help centre' },
-      { to: '/contact', label: 'Send a message' },
     ],
   },
 ];
