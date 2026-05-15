@@ -1,3 +1,4 @@
+import { Helmet } from 'react-helmet-async';
 import { Section, SectionHeading } from '../components/ui/Section';
 import { Card } from '../components/ui/Card';
 import { Button } from '../components/ui/Button';
@@ -39,6 +40,15 @@ export default function Pricing() {
 
   return (
     <>
+      <Helmet>
+        <title>uTap Pricing — Transparent Fees for Campus Vendors</title>
+        <meta 
+          name="description" 
+          content="Simple, commission-based pricing for South African campus vendors. No monthly listing fees. 8% commission on orders. See how uTap helps you grow your campus café." 
+        />
+        <meta name="keywords" content="campus vendor pricing, cashless campus fees, student app commission, university food vendor costs, South Africa" />
+      </Helmet>
+
       <section className="bg-emerald-soft pt-20 md:pt-28 pb-12 md:pb-16">
         <div className="container-page max-w-3xl text-center">
           <span className="inline-flex items-center rounded-full bg-brand-50 px-3 py-1 text-xs font-semibold uppercase tracking-wide text-brand-700">
@@ -48,7 +58,7 @@ export default function Pricing() {
             Pricing without the surprise.
           </h1>
           <p className="mt-5 text-lg sm:text-xl text-ink-muted leading-relaxed">
-            Free to list. A small commission on each paid order. Every cent on your statement.
+            We believe campus commerce should be accessible to every vendor. That's why uTap features <strong>no monthly listing fees</strong> and a transparent, low-commission model designed to protect your margins while reaching more students.
           </p>
         </div>
       </section>
@@ -107,6 +117,22 @@ export default function Pricing() {
         subtitle="Money questions get money answers."
         ctaHref="/help"
       />
+
+      {/* FAQ Schema Markup */}
+      <script type="application/ld+json">
+        {JSON.stringify({
+          "@context": "https://schema.org",
+          "@type": "FAQPage",
+          "mainEntity": pricingFaqs.map(faq => ({
+            "@type": "Question",
+            "name": faq.q,
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": faq.a
+            }
+          }))
+        })}
+      </script>
 
       <Section className="bg-white" variant="tight">
         <div className="rounded-3xl bg-emerald-gradient p-8 md:p-12 text-white text-center">
